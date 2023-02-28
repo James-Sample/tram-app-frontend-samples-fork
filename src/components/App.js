@@ -1,14 +1,21 @@
-import "../styles/App.css";
 import React from "react";
+import "../styles/App.css";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./navbar";
+import LoginPage from "./login-page";
+import TramMap from "./tram-map";
 
-const App = () => {
+const Home = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h2>Tram App</h2>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tram-map" element={<TramMap />} />
+        <Route path="/login-page" element={<LoginPage />} />
+      </Routes>
     </div>
   );
 };
 
-export default App;
+export default Home;

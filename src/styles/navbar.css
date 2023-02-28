@@ -1,0 +1,22 @@
+.Navbar {
+    background-color: lightgrey;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navbar-links {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.navbar-links-item {
+    margin: 0px;
+    padding: 20px;
+    font-size: 25px;
+    display: inline-block;
+}
