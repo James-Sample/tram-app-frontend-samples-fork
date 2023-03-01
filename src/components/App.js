@@ -4,13 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./navbar";
 import LoginPage from "./login-page";
 import TramMap from "./tram-map";
+import HomePage from "./home";
 
-const Home = () => {
+const App = () => {
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/tram-map" element={<TramMap />} />
         <Route path="/login-page" element={<LoginPage />} />
       </Routes>
@@ -18,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default App;
