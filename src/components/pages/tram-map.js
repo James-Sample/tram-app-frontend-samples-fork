@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/tram-map.css";
+import "../../styles/tram-map.css";
 
 const TramMap = () => {
   return (

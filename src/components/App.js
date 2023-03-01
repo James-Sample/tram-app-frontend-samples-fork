@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/App.css";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./navbar";
-import LoginPage from "./login-page";
-import TramMap from "./tram-map";
-import HomePage from "./home";
+import Navbar from "./blocks/navbar";
+import LoginPage from "./pages/login-page";
+import TramMap from "./pages/tram-map";
+import HomePage from "./pages/home";
 
 const App = () => {
   return (

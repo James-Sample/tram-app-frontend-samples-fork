@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/home.css";
+import "../../styles/home.css";
+import TramStopSelect from "../blocks/tram-stop-select";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         src="/images/metrolink-network-map-feb-2023.jpg"
         alt="Manchester Metrolink Tram Map"
       />
+      <TramStopSelect />
     </div>
   );
 };
