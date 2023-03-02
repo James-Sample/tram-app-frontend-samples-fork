@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import getTramData from "../../requests/getData";
 
 const TramStopSelect = () => {
   const [station, setStation] = useState("Select Tram Stop");
+
+  getTramData(station);
+
   const handleSelectStation = (event) => {
     setStation(event.target.value);
   };
